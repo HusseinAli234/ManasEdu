@@ -1,0 +1,38 @@
+.main-img
+{
+    background-image: url("/static/Manas_logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+}
+
+.nav-item
+{
+    transition: margin-top 0.5s,background-color 0.5s;
+    border-radius: 20px;
+
+
+}
+
+.nav-item:hover
+{
+    margin-top: 4px;
+    background-color: crimson;
+}
+
+.div-image
+{
+    background-image: url("/static/Manas_logo.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35%;
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0; /* Убедитесь, что у body нет отступов */
+
+}
+

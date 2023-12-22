@@ -17,61 +17,46 @@
                 integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
                 crossorigin="anonymous"></script>
         <script src="/static/js/localStorage.js"></script>
+        <script src="https://kit.fontawesome.com/bae6f8df00.js" crossorigin="anonymous"></script>
         <meta name="_csrf_header" content="${_csrf.headerName}"/>
         <meta name="_csrf_token" content="${_csrf.token}"/>
+        <link rel="stylesheet" href="/static/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/static/style.css">
     </head>
     <body>
-
-    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <!-- Container wrapper -->
         <div class="container-fluid">
-            <!-- Navbar brand -->
-            <a class="navbar-brand" href="#">Navbar</a>
-
-            <!-- Toggle button -->
-            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                    data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                <i class="fas fa-bars text-light"></i>
+            <div class="div-image">
+            <a class="navbar-brand" href="/" >Manas Edu</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars text-light"></i>
             </button>
-
-            <!-- Collapsible wrapper -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <!-- Left links -->
                 <ul class="navbar-nav me-auto d-flex flex-row mt-3 mt-lg-0">
                     <li class="nav-item text-center mx-2 mx-lg-1">
-                        <a class="nav-link active" aria-current="page" href="#!">
+                        <a class="nav-link active" aria-current="page" href="/">
                             <div>
-                                <i class="fas fa-home fa-lg mb-1"></i>
+                                <i class="fa fa-home fa-lg mb-1"></i>
                             </div>
-                            Home
+                            Главная
                         </a>
                     </li>
                     <li class="nav-item text-center mx-2 mx-lg-1">
-                        <a class="nav-link" href="#!">
+                        <a class="nav-link" href="#">
                             <div>
-                                <i class="far fa-envelope fa-lg mb-1"></i>
-                                <span class="badge rounded-pill badge-notification bg-danger">11</span>
+                                <i class="fa fa-envelope fa-lg mb-1"></i>
+<#--                                <span class="badge rounded-pill badge-notification bg-danger">11</span>-->
                             </div>
-                            Link
-                        </a>
-                    </li>
-                    <li class="nav-item text-center mx-2 mx-lg-1">
-                        <a class="nav-link disabled" aria-disabled="true" href="#!">
-                            <div>
-                                <i class="far fa-envelope fa-lg mb-1"></i>
-                                <span class="badge rounded-pill badge-notification bg-warning">11</span>
-                            </div>
-                            Disabled
+                            Сообщения
                         </a>
                     </li>
                     <li class="nav-item dropdown text-center mx-2 mx-lg-1">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown"
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                            aria-expanded="false">
                             <div>
                                 <i class="far fa-envelope fa-lg mb-1"></i>
-                                <span class="badge rounded-pill badge-notification bg-primary">11</span>
+<#--                                <span class="badge rounded-pill badge-notification bg-primary">11</span>-->
                             </div>
                             Dropdown
                         </a>
@@ -93,31 +78,42 @@
                         <a class="nav-link" href="#!">
                             <div>
                                 <i class="fas fa-bell fa-lg mb-1"></i>
-                                <span class="badge rounded-pill badge-notification bg-info">11</span>
+<#--                                <span class="badge rounded-pill badge-notification bg-info">11</span>-->
                             </div>
-                            Messages
+                            Заявки
                         </a>
                     </li>
                     <li class="nav-item text-center mx-2 mx-lg-1">
                         <a class="nav-link" href="#!">
                             <div>
                                 <i class="fas fa-globe-americas fa-lg mb-1"></i>
-                                <span class="badge rounded-pill badge-notification bg-success">11</span>
+<#--                                <span class="badge rounded-pill badge-notification bg-success">11</span>-->
                             </div>
-                            News
+                            Ранки
+                        </a>
+                    </li>
+                    <li class="nav-item text-center mx-2 mx-lg-1">
+                        <a class="nav-link" href="/create_card">
+                            <div>
+                                <i class="fa-solid fa-pen"></i>
+                            </div>
+                            Создать комнату
                         </a>
                     </li>
                 </ul>
 
-                <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0">
-                    <input type="search" class="form-control" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-primary" type="button" data-mdb-ripple-color="dark">
-                        Search
+                <form class="d-flex input-group w-auto ms-lg-3 my-3 my-lg-0" style="margin-left: auto">
+                    <input type="search" class="form-control" placeholder="Поиск" aria-label="Search" />
+                    <button class="btn btn-primary" style="border-radius: 0px 10px 10px 0px;" type="button" data-mdb-ripple-color="dark">
+                        Искать
                     </button>
                 </form>
             </div>
         </div>
     </nav>
+    <div class="container-fluid w-100 main-img h-100 d-flex justify-content-center">
+        <#nested>
+    </div>
     </body>
     </html>
 </#macro>
