@@ -18,6 +18,7 @@
                 crossorigin="anonymous"></script>
         <script src="/static/js/localStorage.js"></script>
         <script src="https://kit.fontawesome.com/bae6f8df00.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <meta name="_csrf_header" content="${_csrf.headerName}"/>
         <meta name="_csrf_token" content="${_csrf.token}"/>
         <link rel="stylesheet" href="/static/css/font-awesome.min.css">
@@ -58,11 +59,11 @@
                                 <i class="far fa-envelope fa-lg mb-1"></i>
 <#--                                <span class="badge rounded-pill badge-notification bg-primary">11</span>-->
                             </div>
-                            Dropdown
+                            Состязания
                         </a>
                         <!-- Dropdown menu -->
                         <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="/flashcards">Флэшкарты</a></li>
                             <li><a class="dropdown-item" href="#">Another action</a></li>
                             <li>
                                 <hr class="dropdown-divider" />
@@ -111,7 +112,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid w-100 main-img h-100 d-flex justify-content-center">
+    <div class="container-fluid w-100 main-img h-100 d-flex justify-content-center main-container">
         <#nested>
     </div>
     </body>

@@ -1,9 +1,9 @@
 .main-img
 {
-    background-image: url("/static/Manas_logo.png");
+    background-image: url("/static/image/manas_backgroundjpg.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 70%;
+    background-size: 100%;
 }
 
 .nav-item
@@ -28,11 +28,67 @@
     background-size: 35%;
 }
 
+.flashcard
+{
+    transition: transform 1s;
+}
+
+.flashcard:hover
+{
+    transform: scale(1.05);
+}
+
 
 
 html, body {
     height: 100%;
-    margin: 0; /* Убедитесь, что у body нет отступов */
+    margin: 0;
 
 }
+.animate__animated {
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+
+}
+
+.animate__fadeOut {
+    animation-name: fadeOut;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+}
+
+
+.animate__will
+{
+    animation-duration: 0.1s;
+    animation-fill-mode: both;
+
+}
+
+.animate__appear
+{
+    animation-name: appearingAnimation;
+}
+
+@keyframes appearingAnimation {
+    from{
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+
+    }
+
+}
+
 

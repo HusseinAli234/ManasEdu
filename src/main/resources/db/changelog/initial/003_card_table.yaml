@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: 003-card-table
+      author: Hussein
+      changes:
+        - createTable:
+            tableName: card
+            columns:
+              - column:
+                  name: answer_side
+                  type: varchar(200)
+              - column:
+                  name: question_side
+                  type: varchar(200)
+              - column:
+                  name: points
+                  type: int
+              - column:
+                  name: stack_id
+                  type: long
+                  constraints:
+                    foreignKeyName: fk_stack_id
+                    references: stacks(id)
+              - column:
+                  name: id
+                  type: Long
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
